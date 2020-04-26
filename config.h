@@ -7,6 +7,8 @@ static char *certdir        = "~/.surf/certificates/";
 static char *cachedir       = "~/.surf/cache/";
 static char *cookiefile     = "~/.surf/cookies.txt";
 static char *searchurl      = "duckduckgo.com/?q=%s";
+#define HOMEPAGE "~/.surf/index.html"
+
 
 /* Webkit default features */
 /* Highest priority value will be used.
@@ -216,5 +218,3 @@ static Button buttons[] = {
 	{ OnAny,        0,              9,      clicknavigate,  { .i = +1 },    1 },
 	{ OnMedia,      MODKEY,         1,      clickexternplayer, { 0 },       1 },
 };
-
-#define HOMEPAGE "https://duckduckgo.com/"
